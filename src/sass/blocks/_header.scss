@@ -60,25 +60,33 @@
 		background-color: $maincolor;
 		height: 60px;
 		color: #fff;
-		padding-top: 20px;
-
+		//transition: all 1s ease;
 	}
+
+	/* &__tags:hover {
+		background-color: $maincolor_hl;
+	} */
 
 	&__tag-menu {
 		@include reset-list;
 		display: flex;
 		justify-content: center;
 
+		height: 100%;
 		width: 100%;
 		margin: 0;
 
 		a {
+			display: block;
+			height: 100%;
 			text-decoration: none;
 			color: #fff;
 			font-size: 14px;
+			padding: 20px 10px 2px 10px;
 
-			display: block;
-			padding: 2px 10px;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
