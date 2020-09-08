@@ -1,7 +1,18 @@
 .header {
+
+
 	&__menu {
-		display: flex;
-		justify-content: space-between;
+		width: 100%;
+		background-color: #fff;
+		height: 90px;
+		padding-top: 10px;
+
+
+		&-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
 	}
 
 	&__logo {
@@ -21,6 +32,8 @@
 
 		text-transform: uppercase;
 
+		height: 30px;
+
 		a {
 			text-decoration: none;
 			display: block;
@@ -32,6 +45,7 @@
 		}
 
 		&-item {
+
 			display: block;
 
 			font-size: 14px;
@@ -50,16 +64,18 @@
 	}
 
 	&__info {
+
 		background-color: #f3f3f3;
 		min-height: 140px;
 
-		padding-top: 50px;
+		padding-top: 60px;
 	}
 
 	&__tags {
-		background-color: $maincolor;
+		//background-color: $maincolor;
 		height: 60px;
 		color: #fff;
+		animation: color 50s ease-in-out infinite;
 		//transition: all 1s ease;
 	}
 
