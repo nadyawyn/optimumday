@@ -1,0 +1,84 @@
+.header {
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		font-size: 24px;
+		font-weight: 300;
+
+		a {
+			text-decoration: none;
+			color: $colorgr;
+		}
+	}
+
+	&__nav {
+		@include reset-list;
+
+		display: flex;
+
+		text-transform: uppercase;
+
+		a {
+			text-decoration: none;
+			display: block;
+			height: 100%;
+			width: 100%;
+			padding: 6px 20px;
+
+
+		}
+
+		&-item {
+			display: block;
+
+			font-size: 14px;
+			font-weight: 300;
+
+			border-right: 1px solid $colorgrl;
+
+			&:last-child {
+				border-right: none;
+
+				a {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	&__info {
+		background-color: #f3f3f3;
+		min-height: 140px;
+
+		padding-top: 50px;
+	}
+
+	&__tags {
+		background-color: $maincolor;
+		height: 60px;
+		color: #fff;
+		padding-top: 20px;
+
+	}
+
+	&__tag-menu {
+		@include reset-list;
+		display: flex;
+		justify-content: center;
+
+		width: 100%;
+		margin: 0;
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			font-size: 14px;
+
+			display: block;
+			padding: 2px 10px;
+		}
+	}
+}

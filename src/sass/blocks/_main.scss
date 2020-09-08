@@ -1,0 +1,36 @@
+.main {
+	&__article-list {
+		@include reset-list;
+
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+
+	}
+
+	&__article-item {
+		flex-basis: 280px;
+
+		display: block;
+
+		height: 250px;
+
+		background-color: #eee;
+
+		margin: 30px 0;
+
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&__promo {
+		height: 250px;
+		display: flex;
+		justify-content: center;
+
+		background-color: #f3f3f3;
+	}
+}
