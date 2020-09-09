@@ -69,10 +69,28 @@
 	}
 
 	&__promo {
-		height: 165px;
+		min-height: 165px;
 		display: flex;
 		justify-content: center;
 
+		padding: 10px;
 		background-color: #f3f3f3;
+
+		&_bgw {
+			background: #fff;
+
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+
+		&_pr1 {
+			background: url(../img/pb/001.jpg) center -200px no-repeat;
+			background-size: cover;
+		}
+
+		&_pr2 {
+			background: url(../img/pb/002.jpg) center -10px no-repeat;
+			background-size: cover;
+		}
 	}
 }

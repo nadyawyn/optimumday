@@ -185,6 +185,16 @@
 		&__promo {
 			height: 175px;
 			margin: 60px 0;
+
+			&_pr1 {
+				background: url(../img/pb/001.jpg) center center no-repeat;
+				background-size: cover;
+			}
+
+			&_pr2 {
+				background: url(../img/pb/002.jpg) center center no-repeat;
+				background-size: cover;
+			}
 		}
 	}
 
@@ -192,4 +202,6 @@
 		height: 0;
 		overflow: hidden;
 	}
+
+
 }

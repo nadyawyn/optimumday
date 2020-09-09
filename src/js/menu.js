@@ -29,10 +29,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	adjustPadding();
 
-
 	window.addEventListener('resize', adjustPadding, false);
 	window.addEventListener('orientationchange', adjustPadding, false);
-
 
 	window.addEventListener('scroll', raz, false);
 	window.addEventListener('resize', raz, false);
