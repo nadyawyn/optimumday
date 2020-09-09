@@ -14,13 +14,12 @@
 			}
 		}
 
-		&__info {
-			padding-top: 20px;
-			min-height: 100px;
-		}
-
 		&__tag-menu {
 			flex-flow: row wrap;
+		}
+
+		&__desc {
+			flex-basis: 60%;
 		}
 	}
 
@@ -63,8 +62,9 @@
 		}
 
 		&__info {
-			padding: 10px 2px;
-			min-height: 40px;
+			& .container {
+				padding: 10px 10px 30px 10px;
+			}
 		}
 
 		&__nav {

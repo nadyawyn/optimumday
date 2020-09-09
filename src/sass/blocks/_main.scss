@@ -15,18 +15,61 @@
 			height: 250px;
 			background-color: #eee;
 			margin: 30px 0;
+			padding: 20px;
 
 			a {
 				display: block;
 				height: 100%;
 				width: 100%;
+
+				color: #fff;
+				font-weight: 300;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 32px;
+				text-decoration: none;
+			}
+
+			&_1 {
+				background: url(../img/artimg/001.jpg) center (center/cover) no-repeat;
+			}
+
+			&_2 {
+				background: url(../img/artimg/002.jpg) center (center/cover) no-repeat;
+			}
+
+			&_3 {
+				background: url(../img/artimg/003.jpg) center (center/cover) no-repeat;
+			}
+
+			&_4 {
+				background: url(../img/artimg/004.jpg) center (center/cover) no-repeat;
+			}
+
+			&_5 {
+				background: url(../img/artimg/005.jpg) center (center/cover) no-repeat;
+			}
+
+			&_6 {
+				background: url(../img/artimg/006.jpg) center (center/cover) no-repeat;
+			}
+
+			&_7 {
+				background: url(../img/artimg/007.jpg) center (center/cover) no-repeat;
+			}
+
+			&_8 {
+				background: url(../img/artimg/008.jpg) center (center/cover) no-repeat;
+			}
+
+			&_9 {
+				background: url(../img/artimg/009.jpg) center (center/cover) no-repeat;
 			}
 		}
 
 	}
 
 	&__promo {
-		height: 250px;
+		height: 165px;
 		display: flex;
 		justify-content: center;
 
