@@ -1,0 +1,195 @@
+@media (max-width: $tablet-width_l) {
+
+	.container {
+		width: 100%;
+		padding: 15px 25px;
+	}
+
+	.header {
+		&__menu {
+			height: auto;
+
+			&-container {
+				flex-flow: column;
+			}
+		}
+
+		&__info {
+			padding-top: 20px;
+			min-height: 100px;
+		}
+
+		&__tag-menu {
+			flex-flow: row wrap;
+		}
+	}
+
+	.main {
+		&__article {
+			&-item {
+				flex-basis: 46%;
+				margin: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: $tablet-width) {
+	.main {
+		&__article {
+			&-item {
+				flex-basis: 100%;
+				margin: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: $mobile-width_l) {
+	.wrapper {
+		flex-flow: column;
+	}
+
+	.header {
+		&__menu {
+			//height: auto;
+			height: 140px;
+
+			overflow: hidden;
+
+			&-container {
+				padding: 0;
+			}
+		}
+
+		&__info {
+			padding: 10px 2px;
+			min-height: 40px;
+		}
+
+		&__nav {
+			//transition: all 1s ease;
+			transition: all .5s;
+			margin-top: 84px;
+			width: 100%;
+			height: auto;
+			flex-flow: column;
+
+			&-toggle {
+				transition: all .5s;
+				display: block;
+				width: 75px;
+				height: 46px;
+
+				border: 1px solid $colorgr;
+
+				position: absolute;
+				left: 50%;
+				top: 75px;
+
+				transform: translateX(-50%);
+
+				&:before {
+					transition: all .5s;
+					content: "";
+					display: block;
+					width: 88%;
+					height: 1px;
+					background-color: $colorgrl;
+
+					position: absolute;
+					top: 11px;
+					left: 4px;
+
+					box-shadow: 0 7px 0 #a0a0a0, 0 14px 0 #a0a0a0, 0 21px 0 #a0a0a0;
+
+				}
+
+				&.active {
+					transition: all .5s;
+
+					&:before {
+						content: "";
+						display: block;
+						width: 88%;
+						height: 1px;
+						background-color: $colorgrl;
+						transform: rotate(30deg);
+						box-shadow: none;
+						position: absolute;
+						top: 22px;
+						left: 4px;
+					}
+
+					&:after {
+						content: "";
+						display: block;
+						width: 88%;
+						height: 1px;
+						background-color: $colorgrl;
+						transform: rotate(-30deg);
+						box-shadow: none;
+						position: absolute;
+						top: 22px;
+						left: 4px;
+					}
+				}
+			}
+
+			&-item {
+				border: none;
+
+				font-size: 22px;
+				height: 45px;
+
+
+				&:hover {
+					background-color: #eee;
+				}
+
+				a {
+					padding: 9px 16px;
+					text-align: center;
+				}
+
+				&:last-child {
+					a {
+						padding-right: 16px;
+					}
+				}
+			}
+		}
+
+		&__tag-menu {
+
+
+			a {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.main {
+		&__container {
+			padding: 0;
+		}
+
+		&__article {
+			&-item {
+				flex-basis: 100%;
+				margin: 20px 0;
+
+			}
+		}
+
+		&__promo {
+			height: 175px;
+			margin: 60px 0;
+		}
+	}
+
+	.minimized {
+		height: 0;
+		overflow: hidden;
+	}
+}

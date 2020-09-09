@@ -4,7 +4,7 @@
 	&__menu {
 		width: 100%;
 		background-color: #fff;
-		height: 90px;
+		min-height: 90px;
 		padding-top: 10px;
 
 
@@ -41,6 +41,8 @@
 			width: 100%;
 			padding: 6px 20px;
 
+			color: $colorgr;
+
 
 		}
 
@@ -73,9 +75,11 @@
 
 	&__tags {
 		//background-color: $maincolor;
-		height: 60px;
+		min-height: 60px;
 		color: #fff;
-		animation: color 50s ease-in-out infinite;
+		animation: colorgrad 50s ease-in-out infinite;
+
+		padding-bottom: 18px;
 		//transition: all 1s ease;
 	}
 

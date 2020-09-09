@@ -26,6 +26,12 @@ h1 {
 	font-weight: 300;
 }
 
+a {
+	&:hover {
+		color: $maincolor;
+	}
+}
+
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/footer";
