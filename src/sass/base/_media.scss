@@ -175,6 +175,8 @@
 		}
 
 		&__article {
+			padding: 20px;
+
 			&-item {
 				flex-basis: 100%;
 				margin: 20px 0;
@@ -182,7 +184,7 @@
 			}
 		}
 
-		&__promo {
+		&__pr {
 			height: 175px;
 			margin: 60px 0;
 
@@ -194,6 +196,15 @@
 			&_pr2 {
 				background: url(../img/pb/002.jpg) center center no-repeat;
 				background-size: cover;
+			}
+
+			&_articles {
+				flex-flow: column;
+
+				&-item {
+					width: 100%;
+					margin-bottom: 20px;
+				}
 			}
 		}
 	}

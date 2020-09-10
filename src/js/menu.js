@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		headerLogo = document.querySelector('.header__logo'),
 		headerToggle = document.querySelector('.header__nav-toggle'),
 		headerMenu = document.querySelector('.header__menu'),
+		hMC = document.querySelector('.header__menu-container'),
 		headerNav = document.querySelector('.header__nav');
 
 	let promo = document.querySelector('.main__promo');
@@ -64,17 +65,23 @@ window.addEventListener('DOMContentLoaded', function () {
 
 			if (rect.top <= 160) {
 				tagNav.classList.add('fixed');
-				tagNav.style.zIndex = '1600';
+
 				tagNav.style.padding = '5px';
-				tagNav.style.top = '138px';
+				tagNav.style.top = '96px';
 				headerMenu.style.minHeight = '40px';
+
+				hMC.style.padding = '0';
+				headerNav.style.margin = '0';
 			}
 			if (rect2.top >= -112) {
 				tagNav.classList.remove('fixed');
-				tagNav.style.zIndex = '900';
+
 				headerMenu.style.minHeight = '90px';
 				tagNav.style.padding = '15px';
 				tagNav.style.top = '';
+
+				hMC.style.padding = '15px 25px';
+				headerNav.style.margin = '10px';
 			}
 		} else if (currentWWidth > 425) {
 			headerMenu.classList.remove('fixed');

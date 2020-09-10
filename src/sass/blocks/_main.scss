@@ -8,7 +8,23 @@
 
 	}
 
+	&__title {
+		font-size: 1.8em;
+
+		&_ra {
+			color: $colorgr;
+		}
+	}
+
+	&__subtitle {
+		font-size: 1.6em;
+	}
+
 	&__article {
+		padding: 10px 55px 25px 55px;
+		color: $colorgr;
+		line-height: 24px;
+
 		&-item {
 			flex-basis: 280px;
 			display: block;
@@ -68,7 +84,7 @@
 
 	}
 
-	&__promo {
+	&__pr {
 		min-height: 165px;
 		display: flex;
 		justify-content: center;
@@ -91,6 +107,32 @@
 		&_pr2 {
 			background: url(../img/pb/002.jpg) center -10px no-repeat;
 			background-size: cover;
+		}
+
+		&_articles {
+			@include reset-list;
+			background-color: transparent;
+			display: flex;
+			align-items: stretch;
+			justify-content: space-around;
+			height: 100%;
+
+			padding: 0 0 30px 0;
+
+			&-item {
+				display: block;
+				//height: 100px;
+				width: 200px;
+				padding: 10px;
+
+				background-color: #ddd;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+					font-size: 20px;
+				}
+			}
 		}
 	}
 }
