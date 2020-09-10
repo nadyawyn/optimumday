@@ -184,6 +184,27 @@
 			}
 		}
 
+		&__prevnext {
+			margin-bottom: 10px;
+			padding: 0 10px;
+
+			&_prev {
+				a {
+					padding: 0 0 0 40px;
+				}
+
+				flex-basis: 48%;
+			}
+
+			&_next {
+				a {
+					padding: 0 40px 0 0;
+				}
+
+				flex-basis: 48%;
+			}
+		}
+
 		&__pr {
 			height: 175px;
 			margin: 60px 0;
