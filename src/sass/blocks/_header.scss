@@ -108,22 +108,22 @@
 			}
 
 			&_yt {
-				background: url(../../icons/youtube.svg) center (center/cover) no-repeat;
+				background: url(../icons/youtube.svg) center (center/cover) no-repeat;
 
 				&:hover,
 				&:focus {
-					background: url(../../icons/youtube1.svg) center (center/cover) no-repeat;
+					background: url(../icons/youtube1.svg) center (center/cover) no-repeat;
 				}
 			}
 
 			&_fb {
 				height: 30px;
 				width: 30px;
-				background: url(../../icons/facebook.svg) center (center/cover) no-repeat;
+				background: url(../icons/facebook.svg) center (center/cover) no-repeat;
 
 				&:hover,
 				&:focus {
-					background: url(../../icons/facebook1.svg) center (center/cover) no-repeat;
+					background: url(../icons/facebook1.svg) center (center/cover) no-repeat;
 				}
 			}
 		}
