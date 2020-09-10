@@ -50,16 +50,21 @@ window.addEventListener('DOMContentLoaded', function () {
 			if (rect.top <= 90) {
 				tagNav.classList.add('fixed');
 				tagNav.style.padding = '5px';
-				tagItems.style.marginTop = '10px';
-				tagNav.style.top = '60px';
-				headerMenu.style.minHeight = '60px';
+				tagNav.style.top = '40px';
+				headerMenu.style.minHeight = '40px';
+
+				headerLogo.style.margin = '0';
+				headerNav.style.margin = '0';
 			}
 			if (rect2.top >= -106) {
 				tagNav.classList.remove('fixed');
 				headerMenu.style.minHeight = '90px';
 				tagNav.style.padding = '15px';
-				tagItems.style.marginTop = '0';
+
 				tagNav.style.top = '';
+
+				headerLogo.style.margin = '';
+				headerNav.style.margin = '';
 			}
 		} else if (currentWWidth > 768) {
 
