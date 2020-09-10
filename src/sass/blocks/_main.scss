@@ -50,6 +50,8 @@
 			position: relative;
 			min-height: 200px;
 
+			background-color: #aaa;
+
 			&.img1 {
 				background: url(../img/artimg/002.jpg) center (center/cover) no-repeat;
 			}
@@ -69,7 +71,7 @@
 			flex-basis: 280px;
 			display: block;
 			height: 250px;
-			background-color: #eee;
+			background-color: #aaa;
 			margin: 30px 0;
 			padding: 20px;
 
