@@ -43,6 +43,8 @@ a {
 .fixed {
 	position: fixed;
 	width: 100%;
+
+	z-index: 1000;
 }
 
 .title_pr {
@@ -57,7 +59,7 @@ a {
 		font-size: 28px;
 		font-weight: 300;
 
-		text-shadow: 0 0 30px rgb(46, 46, 46);
+		@include textshadow;
 	}
 }
 
